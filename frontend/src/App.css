@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(229, 239, 251, 0.5), rgba(215, 238, 255, 0.5), rgba(199, 238, 255, 0.5), rgba(180, 238, 255, 0.5), rgba(159, 238, 255, 0.5), rgba(142, 229, 251, 0.5), rgba(124, 221, 247, 0.5), rgba(106, 212, 243, 0.5), rgba(96, 193, 233, 0.5), rgba(91, 173, 220, 0.5), rgba(90, 154, 206, 0.5), rgba(91, 134, 206, 0.5));
+
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-origin: padding-box;
+  background-position: center;
+}
