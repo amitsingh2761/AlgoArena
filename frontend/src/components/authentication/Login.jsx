@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router-dom"
 import { useToast } from '@chakra-ui/react'
+
 import axios from "axios"
 import {
     VStack, FormControl, FormLabel, Input,
@@ -52,7 +53,7 @@ export default function Login() {
             };
 
             const { data } = await axios.post(
-                "/api/user/login",
+                `/api/user/login`,
                 { email: credentials.email, password: credentials.password },
                 config
             );

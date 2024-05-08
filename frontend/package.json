@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:5000",
+  "proxy": "https://algoarena.onrender.com",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
@@ -19,6 +19,7 @@
     "antd": "^5.16.4",
     "axios": "^1.6.7",
     "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.0.8",
     "jquery": "^3.7.1",
     "moment": "^2.30.1",

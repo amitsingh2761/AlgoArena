@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Button } from '@chakra-ui/react'; // Imported Button from Chakra-UI
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+
 import { ChatState } from '../../context/ChatProvider';
 import GroupBox from './GroupBox';
 import { useToast } from "@chakra-ui/toast";

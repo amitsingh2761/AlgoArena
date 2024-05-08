@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import { useHistory } from "react-router-dom"
 import { useToast } from '@chakra-ui/react'
 import axios from "axios";
+
+
 import {
     VStack, FormControl, FormLabel, Input,
     InputGroup, InputRightElement, Button
 } from "@chakra-ui/react"
 export default function Signup() {
+
 
     const toast = useToast()
     const history = useHistory();
@@ -109,7 +112,7 @@ export default function Signup() {
                 },
             };
             const { data } = await axios.post(
-                "/api/user/signup",
+                `/api/user/signup`,
                 {
 
                     name: credentials.name,

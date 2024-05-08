@@ -48,7 +48,8 @@ function SideDrawer() {
         notification,
         setNotification,
         chats,
-        setChats,
+        setChats
+
     } = ChatState();
 
     const toast = useToast();

@@ -14,7 +14,8 @@ import ScrollableChat from './ScrollableChat';
 import SendIcon from '@mui/icons-material/Send';
 
 
-const ENDPOINT = "http://localhost:5000";
+// const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://algoarena.onrender.com";
 var socket, selectedChatCompare;
 
 
@@ -38,7 +39,7 @@ function SingleChat({ fetchAgain, setFetchAgain, inputRef }) {
 
     useEffect(() => {
         // Create a new socket connection when the component mounts
-        socket = io(ENDPOINT);
+        socket = io(ENDPOINT);//ENDPOINT
         socket.emit("setup", user);
         socket.on("connected", () => setSocketConnected(true));
         socket.on("typing", () => { setTyping(true) })

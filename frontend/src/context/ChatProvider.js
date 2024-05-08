@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+
+
 const ChatContext = createContext();
 
 const ChatProvider = ({ children }) => {
@@ -18,16 +20,11 @@ const ChatProvider = ({ children }) => {
     const [profileId, setProfileId] = useState("");
 
 
-
-
     const fetchComments = async (config) => {
-
         try {
             const response = await axios.get(`/api/comment/${postId}`, config);
             setComments(response.data);
         } catch (error) {
-
-
             console.log('error fetching comments', error.message);
         }
     };
@@ -69,8 +66,7 @@ const ChatProvider = ({ children }) => {
                 modalProfileOpen,
                 setModalProfileOpen,
                 profileId,
-                setProfileId
-
+                setProfileId,
 
             }}
         >

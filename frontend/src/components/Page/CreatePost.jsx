@@ -39,7 +39,7 @@ export default function CreatePost() {
                 });
             }
 
-            const response = await axios.post("/api/post/create", formData, config);
+            const response = await axios.post(`/api/post/create`, formData, config);
             toast({
                 title: "Post Created Successfully",
                 status: "success",

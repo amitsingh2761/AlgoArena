@@ -10,7 +10,7 @@ export default function AllPosts() {
     const history = useHistory();
     const fetchPosts = async () => {
         try {
-            const response = await axios.get('/api/post');
+            const response = await axios.get(`/api/post`);
             if (response.data) {
                 setPosts(response.data);
             } else {
