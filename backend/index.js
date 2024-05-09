@@ -67,14 +67,14 @@ const port = process.env.PORT || 5000;
 
 
 const server = app.listen(port, () => {
-    console.log(`app listening on PORT ${port}`);
+    console.log("app listening on PORT 5000");
 });
 
 //socket io
 const io = require("socket.io")(
     server, {
     pingTimeout: 60000,
-    cors: { origin: "https://algoarena-frontend.onrender.com", }
+    cors: { origin: "http://localhost:3000", }
 }
 )
 

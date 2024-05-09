@@ -68,7 +68,7 @@ export default function Login() {
             // setUser(data);
             localStorage.setItem("userInfo", JSON.stringify(data));
             setLoading(false);
-            history.push("https://algoarena-frontend.onrender.com/main");
+            history.push("/main");
         } catch (error) {
             toast({
                 title: "Error Occured!",

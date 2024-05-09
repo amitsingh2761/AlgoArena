@@ -20,10 +20,10 @@ function App() {
 
       <BrowserRouter>
         <ChatProvider>
-          <Route path="https://algoarena-frontend.onrender.com/" component={HomePage} exact />
-          <Route path="https://algoarena-frontend.onrender.com/chats" component={ChatPage} exact />
-          <Route path="https://algoarena-frontend.onrender.com/single" component={SinglePost} exact />
-          <Route path="https://algoarena-frontend.onrender.com/main" component={MainPage} exact />
+          <Route path="/" component={HomePage} exact />
+          <Route path="/chats" component={ChatPage} exact />
+          <Route path="/single" component={SinglePost} exact />
+          <Route path="/main" component={MainPage} exact />
 
 
 
