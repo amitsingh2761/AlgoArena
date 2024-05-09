@@ -67,7 +67,7 @@ const port = process.env.PORT || 5000;
 
 
 const server = app.listen(port, () => {
-    console.log("app listening on PORT 5000");
+    console.log(`app listening on PORT ${port}`);
 });
 
 //socket io
